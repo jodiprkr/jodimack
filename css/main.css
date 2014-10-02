@@ -356,8 +356,9 @@ article>.inner {
 }
 
 #contact {
-	background: url(../img/pint.jpg);
+	background: url(../img/badlands.jpg);
 	background-size: cover;
+	height: 900px;
 }
 
 #contact-text {
@@ -408,17 +409,14 @@ article>.inner {
 	color: #70B8FF;
 }
 
-#contact-text img {
-	margin: 20px 0 20px 0;
-}
-
-#contact-text i {
+#fa-icons i {
 	color: rgba(0, 0, 0, .75);
 	font-size: 20px;
+	margin: 0 auto;
 	padding: 10px 5px;
 }
 
-#contact-text i:hover {
+#fa-icons i:hover {
 	color: #FFC2C2;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
