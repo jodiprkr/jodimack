@@ -72,9 +72,9 @@ table {
 }
 
 header {
-	background-color: rgba(255, 255, 255, .5);
+	background-color: transparent;
 	display: block;
-	height: 110px;
+	height: 90px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -87,7 +87,7 @@ header.sticky {
 	box-shadow: 0px 0px 5px #666;
 	font-size: 16px;
 	height: 95px; 
-	background-color: #fff;
+	background-color: #000;
 	opacity: 1;
 	position: fixed;
 	width: 100%;
@@ -104,49 +104,28 @@ header.sticky {
 }
 
 #nav {
+	float: right;
 	margin: 40px auto 0 auto;
-	width: 530px;
+	padding: 0 20px;
 }
 
 #nav li {
 	display: inline-block;
-	font-family: "azo-sans-web",sans-serif;
+	font-family: 'Avenir Next', sans-serif;
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 300;
 	padding: 0 16px;
-	text-align: center;
 	text-transform: uppercase;
 }
 
 #nav a {
-	color: rgba(0, 0, 0, .75);
+	color: rgba(255, 255, 255, 1);
 	cursor: pointer;
 	text-decoration: none;
 }
 
 #nav a:hover {
-	color: #FFC2C2;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-
-#fa-icons {
-	color: rgba(0, 0, 0, .75);
-	float: right;
-	margin: -25px 50px 0 0;
-}
-
-.fa {
-	color: rgba(0, 0, 0, .8);
-	cursor: pointer;
-	display: inline-block;
-	padding: 10px;
-}
-
-.fa:hover {
 	color: #FFC2C2;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -174,22 +153,23 @@ article>.inner {
 	width: 100%;
 }
 
-#home {
-	background: url(../img/strawberry.jpg);
+#about {
+	background: url(../img/mountains.jpg);
 	background-size: cover;
-	height: 750px;
+	height: 900px;
 }
 
-#about h2 {
-	border-bottom: 1px solid #47B3E2;
-	color: rgba(0, 0, 0, .75);
-	font-family: "azo-sans-web",sans-serif;
+#about figure {
+	padding: 10px;
+}
+
+#about h1 {
+	color: #fff;
+	font-family: 'Avenir Next', sans-serif;
 	font-size: 34px;
 	font-style: normal;
-	font-weight: 200;
+	font-weight: 400;
 	text-align: center;
-	margin-bottom: 60px;
-	padding: 40px 0 25px 0;
 }
 
 #about p {
@@ -202,222 +182,37 @@ article>.inner {
 	text-align: left;
 }
 
-#about figure {
-	margin-top: 40px;
-}
-
-#about blockquote {
-	color: rgba(0, 0, 0, .85);
-	font-family: 'Vollkorn', serif;
-	font-size: 24px;
-	font-style: italic;
-	font-weight: 400;
-	line-height: 32px;
-	margin: 40px auto;
-	text-align: center;
-	width: 380px;
-}
-
-#about blockquote span {
-	color: #87D187;
-	font-family: "azo-sans-web",sans-serif;
-	font-style: normal;
-	font-weight: 500;
-}
-
-#menu {
-	background: url(../img/pans.jpg);
-	background-size: cover;
-}
-
-#menu dl {
-	background-color: rgba(255, 255, 255, 0.5);
-	border-radius: 5px;
-	margin: 220px auto;
-	padding: 35px 0;
-	position: relative;
-}
-
-#menu dt {
-	color: rgba(0, 0, 0, .75);
-	font-family: "azo-sans-web",sans-serif;
-	font-size: 38px;
-	font-style: normal;
-	font-weight: 300;
-	padding: 10px;
-}
-
-#menu span {
-	font-family: "grafolita-script", italic;
-	font-size: 45px;
-}
-
-#menu-text h2 {
-	border-bottom: 1px solid #47B3E2;
-	color: rgba(0, 0, 0, .75);
-	font-family: "azo-sans-web",sans-serif;
-	font-size: 34px;
-	font-style: normal;
-	font-weight: 200;
-	text-align: center;
-	margin-bottom: 60px;
-	padding-bottom: 25px;
-}
-
-#menu-text p {
-	font-family: "azo-sans-web",sans-serif;
-	font-size: 24px;
-	font-style: normal;
-	font-weight: 300;
-	line-height: 43px;
-	text-align: center;
-	padding-bottom: 30px;
-}
-
-#menu-text a {
-	color: #64A4FF;
-	font-style: normal;
-	font-weight: 400;
-	margin-bottom: 100px;
-	text-decoration: none;
-}
-
-#menu-text a:hover {
-	color: #99CCFF;
-}
-
-#menu-text img {
-	margin-top: 50px;
-	max-width: 730px;
-}
-
-#menu-text figcaption {
-	color: #666;
-	font-family: "azo-sans-web",sans-serif;
-	font-size: 16px;
-	font-style: italic;
-	font-weight: 200;
-	padding-top: 8px;
-	text-align: left;
-}
-
-#catering {
-	background: url(../img/trike.jpg);
-	background-size: cover;
-}
-
-#catering h1 {
-	background-color: rgba(255, 255, 255, 0.5);
-	border-radius: 5px;
-	margin: 250px auto;
-	padding: 35px;
-	position: relative;
-	max-width: 500px;
-
-	color: rgba(0, 0, 0, .75);
-	font-family: "azo-sans-web",sans-serif;
-	font-size: 38px;
-	font-style: normal;
-	font-weight: 300;
-	line-height: 50px;
-}
-
-#catering-text h2 {
-	border-bottom: 1px solid #47B3E2;
-	color: rgba(0, 0, 0, .75);
-	font-family: "azo-sans-web",sans-serif;
-	font-size: 34px;
-	font-style: normal;
-	font-weight: 200;
-	text-align: center;
-	margin-bottom: 60px;
-	padding-bottom: 25px;
-}
-
-#catering-text p {
-	font-family: "azo-sans-web",sans-serif;
-	font-size: 24px;
-	font-style: normal;
-	font-weight: 300;
-	line-height: 40px;
-	text-align: center;
-	margin-bottom: 40px;
-}
-
-#catering-text img {
-	margin-top: 15px;
-	max-width: 730px;
-}
-
-#catering span{
-	color: rgb(0, 0, 0);
-	font-family: "grafolita-script", italic;
-	font-size: 44px;
-}
-
 #contact {
 	background: url(../img/badlands.jpg);
 	background-size: cover;
 	height: 900px;
 }
 
-#contact-text {
-	background-color: rgba(255, 255, 255, 0.75);
-	border-radius: 5px;
-	margin-top: 85px;
-	margin-bottom: 100px;
-	padding: 22px 16px;
-	padding: 30px;
-	position: relative;
-	text-align: center;
-	width: 450px;
+#contact p {
+	cursor: pointer;
 }
 
-#contact-text h1 {
-	border-bottom: 1px solid;
-	border-color: rgba(0, 0, 0, .5);
-	color: rgba(0, 0, 0, .75);
-	font-family: "azo-sans-web",sans-serif;
-	font-size: 30px;
-	font-style: normal;
-	font-weight: 300;
-	padding-bottom: 15px;
-	text-align: center;
-}
-
-#contact-text p {
-	color: rgba(0, 0, 0, .75);
-	font-family: "azo-sans-web",sans-serif;
-	font-size: 22px;
-	font-style: normal;
-	font-weight: 300;
-	line-height: 26px;
-	margin: 30px auto;
-}
-
-#contact-text a {
-	color: #3385FF;
-	font-family: "azo-sans-web",sans-serif;
-	font-size: 22px;
-	font-style: normal;
-	font-weight: 300;
-	margin-bottom: 100px;
+#contact a {
+	color: #fff;
+	font-family: 'Avenir Next', sans-serif;
+	font-size: 20px;
 	text-decoration: none;
 }
 
-#contact-text a:hover {
-	color: #70B8FF;
+#fa-icons {
+	cursor: pointer;
+	margin: 0 auto;
 }
 
 #fa-icons i {
-	color: rgba(0, 0, 0, .75);
-	font-size: 20px;
-	margin: 0 auto;
-	padding: 10px 5px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	padding: 15px;
 }
 
 #fa-icons i:hover {
-	color: #FFC2C2;
+	color: #000;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -425,17 +220,19 @@ article>.inner {
 }
 
 footer {
+	background-color: #000;
 	display: block;
 	width: 100%;
 }
 
 footer p {
-	color: #666;
+	color: #fff;
+	display: block;
 	font-family: 'Arial', sans-serif;
 	font-size: 11px;
+	margin: 0 auto;
+	padding: 25px 0;
 	width: 300px;
-	display: block;
-	margin: 25px auto;
 }
 
 #error-intro {
