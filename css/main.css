@@ -95,7 +95,7 @@ header.sticky {
 }
 
 #logo {
-	margin: 12px 0 0 40px;
+	margin: 20px 0 0 30px;
 	position: absolute;
 }
 
@@ -112,21 +112,21 @@ header.sticky {
 #nav li {
 	display: inline-block;
 	font-family: 'Avenir Next', sans-serif;
-	font-size: 18px;
+	font-size: 17px;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 400;
 	padding: 0 16px;
 	text-transform: uppercase;
 }
 
 #nav a {
-	color: rgba(255, 255, 255, 1);
+	color: rgba(255, 255, 255, .65);
 	cursor: pointer;
 	text-decoration: none;
 }
 
 #nav a:hover {
-	color: #FFC2C2;
+	color: #fff;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -153,14 +153,19 @@ article>.inner {
 	width: 100%;
 }
 
-#about {
+.about-bg {
 	background: url(../img/mountains.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
-	height: 900px;
+	height: 100%;
+	position: fixed;
+	width: 100%;
+	z-index: -99;
 }
 
 #about figure {
-	margin-bottom: 30px;
+	margin: 40px auto 30px auto;
 }
 
 #about h1 {
@@ -183,14 +188,8 @@ article>.inner {
 	text-align: center;
 }
 
-#about-text {
-	margin-bottom: 140px;
-}
-
-#contact {
-	background: url(../img/badlands.jpg);
-	background-size: cover;
-	height: 900px;
+#work {
+	background-color: #fff;
 }
 
 #work ol {
@@ -203,14 +202,18 @@ article>.inner {
 }
 
 #work li {
-	color: #000;
+	color: rgba(0, 0, 0, .5);
 	padding-top: 30px;
 }
 
 #work li a {
-	color: #000;
-	padding-top: 30px;
+	color: rgba(0, 0, 0, .5);
+	padding: 15px 0;
 	text-decoration: none;
+}
+
+#work li a:hover {
+	color: #000;
 }
 
 #work .subnav {
@@ -218,9 +221,13 @@ article>.inner {
 	text-transform: capitalize;
 }
 
-.subnav a {
-	color: #666;
+#work .subnav a {
+	color: rgba(0, 0, 0, ,75);
 	text-decoration: none;
+}
+
+#work .subnav a:hover {
+	color: #000;
 }
 
 #contact p {
@@ -238,7 +245,7 @@ article>.inner {
 }
 
 #fa-icons {
-	margin: 0 auto;
+	margin: 150px auto 300px auto;
 }
 
 #fa-icons i {
