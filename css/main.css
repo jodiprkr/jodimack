@@ -63,10 +63,15 @@ table {
 
 .wrap-mid {
 	margin: 0 auto;
-	width: 660px;
+	width: 800px;
 }
 
 .wrap-lg {
+	margin: 0 auto;
+	max-width: 1100px;
+}
+
+.wrap-xl {
 	margin: 0 auto;
 	max-width: 3000px;
 }
@@ -192,42 +197,88 @@ article>.inner {
 	background-color: #fff;
 }
 
-#work ol {
+#work img {
+	box-shadow: 0px 0px 5px #666;
+	cursor: pointer;
 	float: left;
+	margin-right: 60px;
+	width: 500px;
+}
+
+#work h1 {
 	font-family: 'Avenir Next', sans-serif;
-	font-size: 18px;
-	margin-left: 25px;
-	text-align: left;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 400;
+	margin: 0 auto 150px auto;
+	text-align: center;
 	text-transform: uppercase;
 }
 
-#work li {
-	color: rgba(0, 0, 0, .5);
-	padding-top: 30px;
+#work h2 {
+	font-family: 'Avenir Next', sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	padding-bottom: 50px;
+	text-align: left;
 }
 
-#work li a {
-	color: rgba(0, 0, 0, .5);
-	padding: 15px 0;
+#work p {
+	font-family: 'Avenir Next', sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 26px;
+	padding-bottom: 30px;
+	text-align: left;
+}
+
+#work a {
+	color: #3366FF;
 	text-decoration: none;
 }
 
-#work li a:hover {
-	color: #000;
+#work a:hover {
+	color: #66CCFF;
 }
 
-#work .subnav {
-	margin: 0 auto 30px 50px;
-	text-transform: capitalize;
+.button {
+	margin-top: 20px;
 }
 
-#work .subnav a {
-	color: rgba(0, 0, 0, ,75);
+.button a {
+	border: 2px solid #3366FF;
+	font-size: 16px;
+	padding: 10px;
+}
+
+.detail img {
+	margin: 10px auto;
+	width: 100%;
+}
+
+.detail p {
+	font-family: 'Avenir Next', sans-serif;
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 26px;
+	margin: 30px auto;
+	text-align: center;
+}
+
+.detail a {
+	color: #3366FF;
 	text-decoration: none;
 }
 
-#work .subnav a:hover {
-	color: #000;
+.detail a:hover {
+	color: #66CCFF;
+}
+
+.section {
+	margin: 0 auto 150px auto;
 }
 
 #contact p {
