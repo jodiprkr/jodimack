@@ -198,19 +198,20 @@ article>.inner {
 }
 
 #work img {
+	cursor: pointer;
 	float: left;
-	padding-right: 60px;
+	margin-right: 60px;
 	width: 500px;
 }
 
 #work h1 {
 	font-family: 'Avenir Next', sans-serif;
-	font-size: 30px;
+	font-size: 36px;
 	font-style: normal;
 	font-weight: 400;
-	margin: 0 auto 70px auto;
-	padding-bottom: 10px;
+	margin: 0 auto 150px auto;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 #work h2 {
@@ -239,6 +240,10 @@ article>.inner {
 
 #work a:hover {
 	color: #66CCFF;
+}
+
+.section {
+	margin: 0 auto 150px auto;
 }
 
 #contact p {
