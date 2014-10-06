@@ -234,23 +234,26 @@ article>.inner {
 	text-align: left;
 }
 
-#work a {
-	color: #3366FF;
-	text-decoration: none;
-}
-
-#work a:hover {
-	color: #66CCFF;
-}
-
 .button {
 	margin-top: 20px;
 }
 
 .button a {
-	border: 2px solid #3366FF;
+	border: 2px solid #70B8FF;
+	border-radius: 2px;
+	color: #70B8FF;
+	text-decoration: none;
 	font-size: 16px;
 	padding: 10px;
+}
+
+.button a:hover {
+	background-color: #70B8FF;
+	color: #fff;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
 }
 
 .detail img {
@@ -266,15 +269,6 @@ article>.inner {
 	line-height: 26px;
 	margin: 30px auto;
 	text-align: center;
-}
-
-.detail a {
-	color: #3366FF;
-	text-decoration: none;
-}
-
-.detail a:hover {
-	color: #66CCFF;
 }
 
 .section {
