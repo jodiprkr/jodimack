@@ -254,6 +254,15 @@ article>.inner {
 	text-align: left;
 }
 
+#work .link {
+	color: #70B8FF;
+	text-decoration: none;
+}
+
+#work .link:hover {
+	color: #2E8AE6;
+}
+
 #work p {
 	font-family: 'Avenir Next', sans-serif;
 	font-size: 18px;
