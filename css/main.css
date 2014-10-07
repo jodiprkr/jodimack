@@ -92,7 +92,7 @@ header.sticky {
 	box-shadow: 0px 0px 5px #666;
 	font-size: 16px;
 	height: 95px; 
-	background-color: #000;
+	background-color: #fff;
 	opacity: 1;
 	position: fixed;
 	width: 100%;
@@ -125,7 +125,7 @@ header.sticky {
 }
 
 #nav a {
-	color: rgba(255, 255, 255, .65);
+	color: rgba(0, 0, 0, .65);
 	cursor: pointer;
 	text-decoration: none;
 }
@@ -153,6 +153,12 @@ article>.inner {
 	padding: 100px 0;
 }
 
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 #content {
 	height: 100%;
 	width: 100%;
@@ -174,23 +180,47 @@ article>.inner {
 }
 
 #about h1 {
-	color: #fff;
+	color: rgba(0, 0, 0, .85);
 	font-family: 'Avenir Next', sans-serif;
 	font-size: 30px;
 	font-style: normal;
 	font-weight: 400;
+	margin: 80px auto 40px auto;
 	text-align: center;
 }
 
 #about p {
-	color: #fff;
+	color: rgba(0, 0, 0, .85);
 	font-family: 'Avenir Next', sans-serif;
 	font-size: 20px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 40px;
-	margin: 30px auto 0 auto;
-	text-align: center;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+#about .cover {
+	float: left;
+	margin-bottom: 24px;
+	width: 263px;
+}
+
+#about .cover img {
+	float: left;
+	margin-right: 14px;
+	width: 120px;
+}
+
+#about .cover h3 {
+	font-family: 'Avenir Next', sans-serif;
+	font-size: 15px;
+	line-height: 18px;
+	text-align: left;
+}
+#about .cover p {
+	font-size: 14px;
+	text-align: left;
 }
 
 #work {
