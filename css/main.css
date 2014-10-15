@@ -83,7 +83,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 3;
+    z-index: 99;
     -webkit-transition: all 0.6s ease;
     transition: all 0.6s ease;
 }
@@ -125,13 +125,13 @@ header.sticky {
 }
 
 #nav a {
-	color: rgba(0, 0, 0, .65);
+	color: rgba(0, 0, 0, .5);
 	cursor: pointer;
 	text-decoration: none;
 }
 
 #nav a:hover {
-	color: #fff;
+	color: rgba(0, 0, 0, 1);
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -175,8 +175,8 @@ article>.inner {
 	z-index: -99;
 }
 
-#about figure {
-	margin: 40px auto 30px auto;
+#about #profile {
+	margin-top: 80px;
 }
 
 #about h1 {
@@ -185,7 +185,7 @@ article>.inner {
 	font-size: 30px;
 	font-style: normal;
 	font-weight: 400;
-	margin: 80px auto 40px auto;
+	margin-top: 40px;
 	text-align: center;
 }
 
@@ -195,9 +195,21 @@ article>.inner {
 	font-size: 20px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 40px;
-	margin-bottom: 20px;
+	line-height: 35px;
 	text-align: left;
+}
+
+#about a {
+	color: #2E8AE6;
+	text-decoration: none;
+}
+
+#about a:hover {
+	color: #70B8FF;
+}
+
+.about-text {
+	margin-top: 40px;
 }
 
 #about .cover {
@@ -207,6 +219,7 @@ article>.inner {
 }
 
 #about .cover img {
+	cursor: pointer;
 	float: left;
 	margin-right: 14px;
 	width: 120px;
@@ -223,12 +236,20 @@ article>.inner {
 	text-align: left;
 }
 
+#about .media {
+	margin: 20px auto 50px auto;
+}
+
+#about .media span {
+	color: #000;
+	font-weight: 500;
+}
+
 #work {
 	background-color: #fff;
 }
 
 #work img {
-	box-shadow: 0px 0px 5px #666;
 	cursor: pointer;
 	float: left;
 	margin-right: 60px;
@@ -255,12 +276,12 @@ article>.inner {
 }
 
 #work .link {
-	color: #70B8FF;
+	color: #2E8AE6;
 	text-decoration: none;
 }
 
 #work .link:hover {
-	color: #2E8AE6;
+	color: #70B8FF;
 }
 
 #work p {
@@ -295,12 +316,16 @@ article>.inner {
 	transition: all 0.1s ease-in-out;
 }
 
-.detail img {
+#craft-detail {
+	margin-top: 100px;
+}
+
+#craft-detail img {
 	margin: 10px auto;
 	width: 100%;
 }
 
-.detail p {
+#craft-detail p {
 	font-family: 'Avenir Next', sans-serif;
 	font-size: 17px;
 	font-style: normal;
@@ -312,6 +337,53 @@ article>.inner {
 
 .section {
 	margin: 0 auto 150px auto;
+}
+
+.sub-header {
+	background-color: rgb(255, 255, 255);
+	border-top: 2px solid #666;
+	border-bottom: 2px solid #666;
+	display: block;
+	height: 58px;
+	margin-top: 85px;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+#sub-nav {
+	margin: 0 auto;
+	width: 380px;
+}
+
+#sub-nav li {
+	font-family: 'Avenir Next', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	display: inline-block;
+	padding: 22px 15px;
+	text-align: right;
+}
+
+#sub-nav a { 
+	color: rgba(0, 0, 0, .5);
+	display: block;
+	text-decoration: none; 
+ 	-webkit-border-radius: 2px; 
+ 	-moz-border-radius: 12px; 
+ }
+
+#sub-nav a:hover { 
+	color: rgba(0, 0, 0, 1); 
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+#sub-nav .active a { 
+	color: rgba(0, 0, 0, .8);
 }
 
 #contact p {

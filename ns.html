@@ -33,21 +33,6 @@
             });
         </script>
 
-        <!-- Shrinking Nav On Scroll -->
-        <script>
-            $(window).scroll(function() {
-            if ($(this).scrollTop() > 1){  
-                $('header').addClass("sticky");
-                $("img[src='img/logo.png']").attr("src","img/logo-2.png");
-            }
-            else{
-                $('header').removeClass("sticky");
-                $("img[src='img/logo-2.png']").attr("src","img/logo.png");
-            }
-
-        });
-        </script>
-
         <!-- Jquery -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
@@ -58,7 +43,7 @@
 
     <body>
 
-        <header class="wrap-xl">
+        <header class="wrap-xl sticky">
             <a href="#about" id="logo"><img src="img/logo.png" alt="Jodi Parker logo"></a>
 
             <ol id="nav">

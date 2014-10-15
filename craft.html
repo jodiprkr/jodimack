@@ -33,21 +33,6 @@
             });
         </script>
 
-        <!-- Shrinking Nav On Scroll -->
-        <script>
-            $(window).scroll(function() {
-            if ($(this).scrollTop() > 1){  
-                $('header').addClass("sticky");
-                $("img[src='img/logo.png']").attr("src","img/logo-2.png");
-            }
-            else{
-                $('header').removeClass("sticky");
-                $("img[src='img/logo-2.png']").attr("src","img/logo.png");
-            }
-
-        });
-        </script>
-
         <!-- Jquery -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
@@ -58,88 +43,129 @@
 
     <body>
 
-        <header class="wrap-xl">
-            <a href="#about" id="logo"><img src="img/logo.png" alt="Jodi Parker logo"></a>
+        <header class="wrap-xl sticky">
+            <a href="index.html#about" id="logo"><img src="img/logo-2.png" alt="Jodi Parker logo"></a>
 
             <ol id="nav">
                 <li><a href="index.html">About</a></li>
                 <li><a href="index.html#work">Work</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ol>
-        </header><!-- /.wrap-lg-->
+
+            <div class="sub-header">
+                <ol id="sub-nav">
+                    <li><a href="#wood">Wood</a></li>
+                    <li><a href="#collage">Collage</a></li>
+                    <li><a href="#fabric">Fabric</a></li>
+                    <li><a href="#metal">Metal</a></li>
+                </ol><!-- /#sub-nav -->
+            </div><!-- .sub-header -->
+        </header><!-- /.wrap-xl -->
 
         <section id="content">
-            <article class="detail">
+            <article id="craft-detail">
                 <div class="inner">
                     <div class="wrap-mid">
 
-                        <p>Write something about craft here.</p>
+                        <p>I've sought solace, joy and discovery in working with my hands as long as I can remember.</p>
 
-                        <a href="https://www.etsy.com/listing/127894136/the-smiths-hand-stamped-light-switch?ref=shop_home_active_2" target="_blank">link to switch plates</a>
+                        <h1>Wood</h1>
+                        <p>I've sought solace, joy and discovery in working with my hands as long as I can remember.</p>
+                        <div id="wood">
+                            <figure>
+                                <img src="img/craft/wood-2.jpg">
+                            </figure>
 
-                        <figure>
-                            <img src="img/craft/wood-2.jpg">
-                        </figure>
+                            <figure>
+                                <img src="img/craft/wood-1.jpg">
+                            </figure>
 
-                        <figure>
-                            <img src="img/craft/wood-1.jpg">
-                        </figure>
+                            <figure>
+                                <img src="img/craft/wood-3.jpg">
+                            </figure>
 
-                        <figure>
-                            <img src="img/craft/wood-3.jpg">
-                        </figure>
+                            <figure>
+                                <img src="img/craft/wood-4.jpg">
+                            </figure>
 
-                        <figure>
-                            <img src="img/craft/wood-4.jpg">
-                        </figure>
+                            <figure>
+                                <img src="img/craft/wood-5.jpg">
+                            </figure>
 
-                        <figure>
-                            <img src="img/craft/wood-5.jpg">
-                        </figure>
+                            <figure>
+                                <img src="img/craft/wood-6.jpg">
+                            </figure>
 
-                        <figure>
-                            <img src="img/craft/wood-6.jpg">
-                        </figure>
+                            <figure>
+                                <img src="img/craft/wood-7.jpg">
+                            </figure>
+                        </div><!-- /#wood -->
 
-                        <figure>
-                            <img src="img/craft/wood-7.jpg">
-                        </figure>
+                        <h1>Collage</h1>
+                        <p>I've sought solace, joy and discovery in working with my hands as long as I can remember.</p>
+                        <div id="collage">
+                            <figure>
+                                <img src="img/craft/collage-1.jpg">
+                            </figure>
 
-                        <figure>
-                            <img src="img/craft/collage-1.jpg">
-                        </figure>
+                            <figure>
+                                <img src="img/craft/collage-2.jpg">
+                            </figure>
 
-                        <figure>
-                            <img src="img/craft/collage-2.jpg">
-                        </figure>
+                            <figure>
+                                <img src="img/craft/collage-3.jpg">
+                            </figure>
 
-                        <figure>
-                            <img src="img/craft/collage-3.jpg">
-                        </figure>
+                            <figure>
+                                <img src="img/craft/collage-4.jpg">
+                            </figure>
 
-                        <figure>
-                            <img src="img/craft/collage-4.jpg">
-                        </figure>
+                            <figure>
+                                <img src="img/craft/collage-5.jpg">
+                            </figure>
 
-                        <figure>
-                            <img src="img/craft/collage-5.jpg">
-                        </figure>
+                            <figure>
+                                <img src="img/craft/collage-6.jpg">
+                            </figure>
+                        </div><!-- /#collage -->
 
-                        <figure>
-                            <img src="img/craft/collage-6.jpg">
-                        </figure>
+                        <h1>Fabric</h1>
+                        <p>I've sought solace, joy and discovery in working with my hands as long as I can remember.</p>
+                        <div id="fabric">
+                            <figure>
+                                <img src="img/craft/rug-1.jpg">
+                            </figure>
 
-                        <figure>
-                            <img src="img/craft/rug-1.jpg">
-                        </figure>
+                            <figure>
+                                <img src="img/craft/rug-2.jpg">
+                            </figure>
 
-                        <figure>
-                            <img src="img/craft/rug-2.jpg">
-                        </figure>
+                            <figure>
+                                <img src="img/craft/rug-3.jpg">
+                            </figure>
 
-                        <figure>
-                            <img src="img/craft/switchplate.jpg">
-                        </figure>
+                            <figure>
+                                <img src="img/craft/rug-4.jpg">
+                            </figure>
+
+                            <figure>
+                                <img src="img/craft/rug-5.jpg">
+                            </figure>
+
+                            <figure>
+                                <img src="img/craft/rug-6.jpg">
+                            </figure>
+                        </div><!-- /#fabric -->
+
+                        <h1>Metal</h1>
+                        <p>I've sought solace, joy and discovery in working with my hands as long as I can remember.</p>
+                        <div id="metal">
+                            <figure>
+                                <img src="img/craft/switchplate.jpg">
+                            </figure>
+
+                            <a href="https://www.etsy.com/listing/127894136/the-smiths-hand-stamped-light-switch?ref=shop_home_active_2" target="_blank">link to switch plates</a>
+                        </div><!-- /#metal -->
 
                         <p class="button"><a href="index.html#work">Back to work</a></p>
                     </div>
