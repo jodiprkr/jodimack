@@ -209,12 +209,12 @@ article>.inner {
 	text-decoration: none;
 }
 
-#about span{
-	font-weight: 500;
-}
-
 #about a:hover {
 	color: #70B8FF;
+}
+
+#about span{
+	font-weight: 500;
 }
 
 .about-text p {
@@ -332,6 +332,12 @@ article>.inner {
 	margin-top: 50px;
 }
 
+.detail a {
+	color: #2E8AE6;
+	font-weight: 400;
+	text-decoration: none;
+}
+
 .detail h1 {
 	border-bottom: 2px solid;
 	border-color: rgba(0, 0, 0, 0.4);
@@ -349,15 +355,51 @@ article>.inner {
 	font-family: 'Lato', sans-serif;
 	font-size: 19px;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 28px;
 	margin-bottom: 20px;
 	text-align: left;
 }
 
+.detail ul {
+	margin-bottom: 30px;
+}
+
+.detail li {
+	font-family: 'Lato', sans-serif;
+	font-size: 19px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 28px;
+	text-align: left;
+}
+
 .detail img {
-	margin: 10px auto;
+	margin-top: 30px;
 	width: 100%;
+}
+
+.detail figcaption {
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 300;
+	padding-top: 10px;
+	text-align: left;
+}
+
+.detail figcaption a:hover {
+	color: #70B8FF;
+}
+
+.detail #metal img {
+	cursor: pointer;
+}
+
+.detail .column {
+	column-count:2;
+	-moz-column-count:2; /* Firefox */
+	-webkit-column-count:2; /* Safari and Chrome */
 }
 
 .section {

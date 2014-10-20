@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>Jodi Parker – Home</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="Designer based in Seattle, WA">
+        <meta name="keywords" content="UX, UI, Web Design, Designer, Seattle, WA, Washington">
+        <meta name="author" content="Jodi Parker" />
+
+        <!--TypeKit Fonts -->
+        <script type="text/javascript" src="//use.typekit.net/ppq6bwl.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Montserrat|Raleway:600,400|Open+Sans|Lato:300,400' rel='stylesheet' type='text/css'>
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+        <!--CSS -->
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- Smooth scroll js -->
+        <script type='text/javascript' src='http://code.jquery.com/jquery-1.6.4.js'></script>
+        <script type='text/javascript'>
+            $(window).load(function(){
+            $('a').click(function(){
+                $('html, body').animate({
+                    scrollTop: $( $(this).attr('href') ).offset().top
+                }, 500);
+                return false;
+            });
+            });
+        </script>
+
+        <!-- Jquery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+        <script src="jquery.viewport.mini.js" type="text/javascript"></script>
+
+
+    </head>
+
+    <body>
+
+        <header class="wrap-xl sticky">
+            <a href="index.html" id="logo"><img src="img/logo-2.png" alt="Jodi Parker logo"></a>
+
+            <ol id="nav">
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html#work">Work</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ol>
+        </header><!-- /.wrap-xl sticky-->
+
+        <section id="content">
+            <div class="error-bg"></div><!-- div for background image -->
+
+            <article id="error">
+                <div class="inner">
+                    <div class="wrap-mid">
+                        <h1>404 error</h1>
+                        <p>Well this is embarrassing...</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        
+        <footer class="wrap-xl">
+            <p class="group">&copy;Copyright 2014 Jodi Parker – Seattle, WA</p>
+        </footer><!-- /.wrap-lg-->
+
+    </body>
+
+</html>
