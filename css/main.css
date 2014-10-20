@@ -138,6 +138,10 @@ header.sticky {
 	transition: all 0.3s ease-in-out;
 }
 
+#nav .active a {
+	color: #000;
+}
+
 article {
 	display: table;
 	height: 100%;
@@ -164,8 +168,8 @@ article>.inner {
 	width: 100%;
 }
 
-.about-bg {
-	background-image: url('../img/jodi-taipei.png');
+.home-bg {
+	background-image: url('../img/jp-bg.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -175,30 +179,18 @@ article>.inner {
 	z-index: -99;
 }
 
-#about #profile {
-	margin-top: 80px;
-}
-
-#about h1 {
+#home h1 {
 	color: rgba(0, 0, 0, .85);
 	font-family: 'Montserrat', sans-serif;
 	font-size: 40px;
 	font-style: normal;
 	font-weight: 400;
-	margin: 200px auto 40px auto;
-	text-align: left;
+	margin: 200px auto 350px auto;
+	text-align: right;
 }
 
-#about h2 {
-	color: rgba(0, 0, 0, .85);
-	font-family: 'Lato', sans-serif;
-	font-size: 24px;
-	font-style: normal;
-	font-weight: 300;
-	line-height: 35px;
-	margin-bottom: 400px;
-	text-align: left;
-	width: 315px;
+#about {
+	background-color: rgba(255, 255, 255, .80);
 }
 
 #about p {
@@ -231,7 +223,6 @@ article>.inner {
 
 #about .cover {
 	float: left;
-	margin-bottom: 24px;
 	width: 263px;
 }
 
@@ -337,22 +328,11 @@ article>.inner {
 	transition: all 0.1s ease-in-out;
 }
 
-#craft-detail {
-	margin-top: 100px;
-}
-
-#craft-detail #intro {
+.detail {
 	margin-top: 50px;
-	padding: 100px;
-	text-align: left;
 }
 
-#craft-detail img {
-	margin: 10px auto;
-	width: 100%;
-}
-
-#craft-detail h1 {
+.detail h1 {
 	border-bottom: 2px solid;
 	border-color: rgba(0, 0, 0, 0.4);
 	font-family: 'Lato', sans-serif;
@@ -365,7 +345,7 @@ article>.inner {
 	text-align: left;
 }
 
-#craft-detail p {
+.detail p {
 	font-family: 'Lato', sans-serif;
 	font-size: 19px;
 	font-style: normal;
@@ -375,85 +355,24 @@ article>.inner {
 	text-align: left;
 }
 
+.detail img {
+	margin: 10px auto;
+	width: 100%;
+}
+
 .section {
 	margin: 0 auto 150px auto;
 }
 
-.sub-header {
-	background-color: rgb(255, 255, 255);
-	border-top: 2px solid #666;
-	border-bottom: 2px solid #666;
-	display: block;
-	height: 58px;
-	margin-top: 85px;
-	position: fixed;
-	width: 100%;
-	z-index: 1;
-}
-
-#sub-nav {
-	margin: 0 auto;
-	text-align: center;
-	width: 380px;
-}
-
-#sub-nav li {
-	font-family: 'Lato', sans-serif;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 400;
-	display: inline-block;
-	padding: 22px 15px;
-}
-
-#sub-nav a { 
-	color: rgba(0, 0, 0, .5);
-	display: block;
-	text-decoration: none; 
- 	-webkit-border-radius: 2px; 
- 	-moz-border-radius: 12px; 
- }
-
-#sub-nav a:hover { 
-	color: rgba(0, 0, 0, 1); 
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-
-#sub-nav .active a { 
-	color: rgba(0, 0, 0, .8);
-}
-
 #contact {
-	background-image: url('../img/mountains.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100%;
-	position: relative;
-	width: 100%;
-	z-index: 1;
-}
-
-#contact h1 {
-	border-bottom: 1px dotted #666;
-	font-family: 'Lato', sans-serif;
-	font-size: 36px;
-	font-style: normal;
-	font-weight: 300;
-	margin: 0 auto 100px auto;
-	padding-bottom: 30px;
-	text-align: center;
-	text-transform: uppercase;
-	width: 600px;
+	background-color: rgba(255, 255, 255, .85);
+	height: 600px;
 }
 
 #contact p {
 	cursor: pointer;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
+	font-size: 18px;
 	font-style: normal;
 	font-weight: 400;
 }
@@ -461,13 +380,13 @@ article>.inner {
 #contact a {
 	color: #000;
 	display: inline-block;
-	margin: 0 20px;
+	margin: 0 40px;
 	padding: 10px;
 	text-decoration: none;
 }
 
 #fa-icons {
-	margin: 0 auto 100px auto;
+	margin: 0 auto;
 }
 
 #fa-icons i {
@@ -501,30 +420,38 @@ footer p {
 	width: 300px;
 }
 
-#error-intro {
-	border-radius: 5px;
-	margin: -700px auto 440px auto;
-	padding: 30px;
-	position: relative;
+.error-bg {
+	background-image: url('../img/404.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	padding-left: 150px;
+	position: fixed;
+	width: 100%;
+	z-index: -99;
 }
 
-#error-intro h1 {
-	color: rgba(255, 255, 255, .85);
-	font-family: "grafolita-script", italic;	
-	font-size: 70px;
-	font-weight: 100;
-	text-align: center;
+#error {
+	height: 750px;
 }
 
-#error-intro p {
-	color: rgba(0, 0, 0, .7);
-	font-family: "azo-sans-web", sans-serif;
-	font-size: 38px;
+#error h1 {
+	color: rgba(0, 0, 0, .85);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 400;
+	margin: 160px auto 25px auto;
+	text-align: right;
+}
+
+#error p {
+	color: rgba(0, 0, 0, .85);
+	font-family: 'Lato', sans-serif;
+	font-size: 24px;
 	font-style: normal;
 	font-weight: 300;
-	line-height: 50px;
-	margin: 0 auto;
-	padding: 30px 0;
-	text-align: center;
-	width: 480px;
+	line-height: 35px;
+	text-align: right;
 }
