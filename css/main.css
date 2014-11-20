@@ -76,6 +76,15 @@ table {
 	max-width: 3000px;
 }
 
+.offscreen {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
 header {
 	background-color: transparent;
 	display: block;
@@ -106,6 +115,10 @@ header.sticky {
 
 #logo img {
 	cursor: pointer;
+}
+
+#nav a.active {
+   text-decoration: underline; 
 }
 
 #nav {
@@ -264,8 +277,8 @@ article>.inner {
 #work img {
 	cursor: pointer;
 	float: left;
-	margin-right: 60px;
-	padding: 0 0 50px 20px;
+	margin: 0 60px 50px auto;
+	padding-left: 20px;
 	width: 500px;
 }
 
