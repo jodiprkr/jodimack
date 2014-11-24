@@ -236,13 +236,14 @@ article>.inner {
 
 #about .cover {
 	float: left;
-	width: 263px;
+	padding-right: 10px;
+	width: 251px;
 }
 
 #about .cover img {
 	cursor: pointer;
 	float: left;
-	margin-right: 14px;
+	padding-right: 12px;
 	width: 120px;
 }
 
