@@ -71,8 +71,9 @@ table {
 }
 
 .wrap-mid {
+	height: auto;
 	margin: 0 auto;
-	width: 800px;
+	max-width: 60%;
 }
 
 .wrap-lg {
@@ -190,14 +191,10 @@ article>.inner {
 	width: 100%;
 }
 
-.bg {
-	background-image: url('../img/jp-bg.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100%;
+.bg img {
+	height:auto;
+	max-width:100%;
 	position: fixed;
-	width: 100%;
 	z-index: -99;
 }
 
@@ -252,7 +249,7 @@ article>.inner {
 #about .cover img {
 	cursor: pointer;
 	float: left;
-	padding-right: 12px;
+	padding: 0 12px 15px 0;
 	width: 120px;
 }
 
@@ -287,9 +284,8 @@ article>.inner {
 #work img {
 	cursor: pointer;
 	float: left;
-	margin: 0 60px 50px auto;
-	padding-left: 20px;
-	width: 500px;
+	margin: 0 5rem 0 2rem;
+	width: 45.83%;
 }
 
 #work h1 {
@@ -459,7 +455,7 @@ article>.inner {
 }
 
 .section {
-	margin: 0 auto 150px auto;
+	margin: 0 auto 10rem 5rem;
 }
 
 #contact {
