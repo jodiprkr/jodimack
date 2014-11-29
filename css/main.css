@@ -61,27 +61,31 @@ table {
 /* Style 
 /////////////////////////////////////////////////////////////////// */
 .wrap-xs {
+	height: auto;
 	margin: 0 auto;
-	width: 400px;
+	max-width: 400px;
 }
 
 .wrap-sm {
+	height: auto;
 	margin: 0 auto;
-	width: 600px;
+	max-width: 600px;
 }
 
 .wrap-mid {
 	height: auto;
 	margin: 0 auto;
-	max-width: 60%;
+	max-width: 800px;
 }
 
 .wrap-lg {
+	height: auto;
 	margin: 0 auto;
 	max-width: 1100px;
 }
 
 .wrap-xl {
+	height: auto;
 	margin: 0 auto;
 	max-width: 3000px;
 }
