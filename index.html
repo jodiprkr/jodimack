@@ -48,16 +48,6 @@
         });
         </script>
 
-        <!-- Active Navigation States -->
-        <script>
-            $(function(){
-                $('#nav a').click(function () {
-                    $('#nav a').removeClass('active');
-                    $(this).addClass('active');
-                 });
-             });
-        </script>
-
         <!-- Jquery -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
@@ -73,15 +63,17 @@
 
             <a href="#home" id="logo"><img src="img/logo.png" alt="Jodi Parker logo"></a>
 
-            <ol id="nav">
+            <ol id="nav" class="group">
                 <li><a href="#about">About</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ol>
-        </header><!-- /.wrap-lg-->
+        </header><!-- /.wrap-xl-->
 
         <section id="content">
-            <div class="bg"></div><!-- div for background image --> 
+            <div class="wrap-xl bg">
+                <img src="img/jp-bg.jpg" /><!-- background image -->
+            </div>
 
             <article id="home">
                 <div class="inner">
