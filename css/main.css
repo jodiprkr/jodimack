@@ -131,12 +131,12 @@ header.sticky {
 	cursor: pointer;
 }
 
-#nav {
+nav {
 	float: right;
 	width: 450px;
 }
 
-#nav li {
+nav li {
 	display: inline-block;
 	font-family: 'Lato', sans-serif;
 	font-size: 17px;
@@ -149,7 +149,7 @@ header.sticky {
 	width: 100px;
 }
 
-#nav a {
+nav a {
 	display: block;
 	color: rgba(0, 0, 0, .5);
 	cursor: pointer;
@@ -157,7 +157,7 @@ header.sticky {
 	text-decoration: none;
 }
 
-#nav a:hover {
+nav a:hover {
 	color: rgba(0, 0, 0, 1);
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -165,7 +165,7 @@ header.sticky {
 	transition: all 0.3s ease-in-out;
 }
 
-#nav .active a {
+nav .active a {
 	color: #000;
 }
 
@@ -393,11 +393,6 @@ article>.inner {
 	margin-top: 40px;
 }
 
-#fg h1 {
-	margin-bottom: 80px;
-	text-align: center;
-}
-
 .detail {
 	margin-top: 50px;
 }
@@ -435,29 +430,72 @@ article>.inner {
 	font-style: normal;
 	font-weight: 300;
 	line-height: 32px;
-	margin-bottom: 20px;
+	margin: 30px auto 50px auto;
 	text-align: left;
 }
 
-.detail ol {
-	margin: 0 120px;
-}
-
-.detail li {
-	color: #666;
+.detail span {
+	color: rgba(0, 0, 0, .7);
 	font-family: 'Lato', sans-serif;
 	font-size: 20px;
 	font-size: 1.25rem;
 	font-style: normal;
+	font-weight: 500;
+	text-align: center;
+}
+
+.detail blockquote {
+	color: rgba(0, 0, 0, .7);
+	font-family: 'PT Sans', sans-serif;
+	font-size: 24px;
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 32px;
+	margin-bottom: 75px;
+	text-align: left;
+}
+
+.detail blockquote .italic{
+	color: rgba(0, 0, 0, .7);
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	font-size: 1.25rem;
+	font-style: italic;
 	font-weight: 300;
+}
+
+.detail ol {
+	margin: 0 15% 5% 15%;
+}
+
+.detail li {
+	color: rgba(0, 0, 0, .7);
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 32px;
 	list-style: outside;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	text-align: left;
 }
 
 .detail img {
 	margin-bottom: 30px;
 	width: 100%;
+}
+
+.detail figcaption {
+	color: rgba(0, 0, 0, .7);
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 20px;
+	text-align: left;
 }
 
 .detail #metal img {
