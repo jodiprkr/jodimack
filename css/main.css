@@ -63,31 +63,37 @@ table {
 
 .wrap-xxs {
 	margin: 0 auto;
-	width: 300px;
+	width: 100%;
+	max-width: 300px;
 }
 
 .wrap-xs {
 	margin: 0 auto;
-	width: 400px;
+	width: 100%;
+	max-width: 400px;
 }
 
 .wrap-sm {
 	margin: 0 auto;
-	width: 600px;
+	width: 100%;
+	max-width: 600px;
 }
 
 .wrap-mid {
 	margin: 0 auto;
-	width: 800px;
+	width: 100%;
+	max-width: 800px;
 }
 
 .wrap-lg {
 	margin: 0 auto;
+	width: 100%;
 	max-width: 1100px;
 }
 
 .wrap-xl {
 	margin: 0 auto;
+	width: 100%;
 	max-width: 3000px;
 }
 
@@ -120,7 +126,6 @@ header.sticky {
 	background-color: #fff;
 	box-shadow: 0px 0px 5px #666;
 	font-size: 16px;
-	font-size: 1rem; 
 	height: 95px; 
 	opacity: 1;
 	position: fixed;
@@ -139,7 +144,8 @@ header.sticky {
 
 nav {
 	float: right;
-	width: 450px;
+	width: 100%;
+	max-width: 450px;
 }
 
 nav li {
@@ -156,9 +162,9 @@ nav li {
 }
 
 nav a {
-	display: block;
 	color: rgba(0, 0, 0, .5);
 	cursor: pointer;
+	display: block;
 	padding: 40px 0;
 	text-decoration: none;
 }
@@ -215,6 +221,7 @@ article>.inner {
 
 #about {
 	background-color: rgba(255, 255, 255, .80);
+	padding: 0 30px;
 }
 
 #about p {
@@ -251,8 +258,9 @@ article>.inner {
 #about .cover img {
 	cursor: pointer;
 	float: left;
-	padding-right: 12px;
-	width: 120px;
+	padding: 0 12px 20px 20px;
+	max-width: 120px;
+	min-width: 80px;
 }
 
 #about .cover h3 {
@@ -286,14 +294,16 @@ article>.inner {
 	cursor: pointer;
 	display: block;
 	float: left;
-	margin: 0 40px 100px auto;
-	padding-left: 20px;
+	margin-right: 40px;
+	padding: 1em 0 2em 1em;
 	width: 500px;
 }
 
 .section .text {
 	display: block;
 	float: right;
+	margin-bottom: 40px;
+	padding: 0 0 5em 1em;
 	width: 520px;
 }
 
