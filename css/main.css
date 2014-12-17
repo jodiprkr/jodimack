@@ -226,7 +226,7 @@ article>.inner {
 
 #about {
 	background-color: rgba(255, 255, 255, .80);
-	padding: 0 30px;
+	padding: 0 50px;
 }
 
 #about p {
@@ -677,7 +677,7 @@ footer p {
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
 
 	nav li {
 		font-size: 16px;
@@ -685,12 +685,12 @@ footer p {
 	}
 
 	#home {
-		height: 500px;
+		height: 450px;
 	}
 
 	#home h1 {
 		font-size: 34px;
-		margin-top: -10%;
+		margin-top: 2%;
 	}
 
 	img {
@@ -706,19 +706,25 @@ footer p {
 
 @media screen and (max-width: 600px) {
 
+	#logo {
+		margin: 10px 0 0 10px;
+		position: absolute;
+	}
+
 	nav li {
-		font-size: 15px;
-		padding: 0 12px;
-		width: 80px;
+		font-size: 12px;
+		padding: 0 10px;
+		width: 50px;
 	}
 
 	#home {
-		height: 330px;
+		height: 350px;
 	}
 
 	#home h1 {
-		font-size: 30px;
-		margin-top: -7%;
+		font-size: 26px;
+		margin-right: 2%;
+		margin-top: 2%;
 	}
 
 	#about p {
@@ -735,4 +741,24 @@ footer p {
 		float: none;
 		width: 75%;
 	}
+}
+
+
+@media screen and (max-width: 400px) {
+
+	#home {
+		height: 235px;
+	}
+
+	#home h1 {
+		font-size: 24px;
+		margin-right: 1%;
+		margin-top: 2%;
+	}
+
+	#about p {
+		font-size: 24px;
+		line-height: 40px;
+	}
+	
 }
