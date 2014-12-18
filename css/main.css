@@ -192,7 +192,7 @@ article {
 article>.inner {
 	display: table-cell;
 	vertical-align: middle;
-	padding: 100px 0;
+	padding: 60px 0;
 }
 
 .group:after {
@@ -201,14 +201,12 @@ article>.inner {
   clear: both;
 }
 
-.bg img {
-	position: fixed;
-	width: 100%;
-	z-index: -99;
-}
-
 #home {
+	background: url(../img/jp-bg-lg.jpg);
+	background-size: cover;
+	box-shadow: 0px 0px 2px #C2C2C2;
 	height: 800px;
+	width: 100%;
 }
 
 #home h1 {
@@ -225,8 +223,7 @@ article>.inner {
 }
 
 #about {
-	background-color: rgba(255, 255, 255, .80);
-	padding: 0 50px;
+	background-color: rgba(224, 224, 224, .1);
 }
 
 #about p {
@@ -236,6 +233,7 @@ article>.inner {
 	font-style: normal;
 	font-weight: 300;
 	line-height: 35px;
+	padding: 0 30px;
 	text-align: left;
 }
 
@@ -255,7 +253,7 @@ article>.inner {
 
 #about .cover {
 	float: left;
-	padding-right: 10px;
+	padding: 0 10px 10px 0;
 	width: 251px;
 }
 
@@ -283,6 +281,7 @@ article>.inner {
 
 #about .media {
 	margin: 20px auto 50px auto;
+	padding-left: 10px;
 }
 
 #about .media span {
@@ -299,7 +298,7 @@ article>.inner {
 	display: block;
 	float: left;
 	margin-right: 40px;
-	padding: 0 0 5em 1em;
+	padding: 0 0 100px 20px;
 	width: 500px;
 }
 
@@ -307,7 +306,7 @@ article>.inner {
 	display: block;
 	float: right;
 	margin-bottom: 40px;
-	padding: 0 0 5em 1em;
+	padding: 0 0 100px 20px;
 	width: 520px;
 }
 
@@ -326,7 +325,7 @@ article>.inner {
 	font-style: normal;
 	font-weight: 300;
 	margin: 0 auto 80px auto;
-	padding-bottom: 60px;
+	padding: 50px 0 60px 0;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -568,7 +567,7 @@ article>.inner {
 }
 
 #contact {
-	background-color: rgba(255, 255, 255, .8);
+	background-color: rgba(224, 224, 224, .1);
 	height: 600px;
 }
 
@@ -578,10 +577,11 @@ article>.inner {
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 400;
+	padding-bottom: 35px;
 }
 
 #contact a {
-	color: #000;
+	color: rgba(0, 0, 0, .7);
 	display: inline-block;
 	margin: 0 40px;
 	padding: 10px;
@@ -593,12 +593,12 @@ article>.inner {
 }
 
 #fa-icons i {
-	color: #000;
+	color: rgba(0, 0, 0, .7);
 	padding-bottom: 15px;
 }
 
 #fa-icons i:hover {
-	color: rgba(0, 0, 0, .5);
+	color: rgba(0, 0, 0, .4);
 	cursor: pointer;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -607,7 +607,6 @@ article>.inner {
 }
 
 footer {
-	box-shadow: 0px 0px 5px #666;
 	background-color: #fff;
 	width: 100%;
 }
@@ -659,6 +658,11 @@ footer p {
 	text-align: right;
 }
 
+
+
+/* Responsive
+//////////////////////////////////////////////////////////// */
+
 @media screen and (max-width: 1100px) {
 
 	nav li {
@@ -673,11 +677,15 @@ footer p {
 
 	#home h1 {
 		font-size: 36px;
-		margin-top: -10%;
+		margin-top: 1%;
 	}
 }
 
 @media screen and (max-width: 800px) {
+
+	#logo {
+		margin: 25px 0 0 30px;
+	}
 
 	nav li {
 		font-size: 16px;
@@ -707,14 +715,13 @@ footer p {
 @media screen and (max-width: 600px) {
 
 	#logo {
-		margin: 10px 0 0 10px;
-		position: absolute;
+		margin: 30px 0 0 30px;
 	}
 
 	nav li {
 		font-size: 12px;
 		padding: 0 10px;
-		width: 50px;
+		width: 70px;
 	}
 
 	#home {
@@ -746,19 +753,71 @@ footer p {
 
 @media screen and (max-width: 400px) {
 
+	article>.inner {
+		padding: 20px 0;
+	}
+
+	header.sticky {
+		height: 60px;
+	}
+
+	#logo {
+		margin: 15px 0 0 15px;
+	}
+
+	nav a {
+		padding: 25px 0;
+	}
+
+	nav li {
+		font-size: 9px;
+		padding: 0 8px 0 0;
+		width: 50px;
+	}
+
 	#home {
 		height: 235px;
 	}
 
 	#home h1 {
-		font-size: 24px;
-		margin-right: 1%;
-		margin-top: 2%;
+		font-size: 20px;
+		margin-right: -3%;
+	}
+
+	#about .cover {
+		width: 280px;
 	}
 
 	#about p {
-		font-size: 24px;
-		line-height: 40px;
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	#work h1 {
+		border-bottom: none;
+		font-size: 28px;
+		margin-bottom: 40px;
+		margin-left: 30px;
+		text-align: left;
+	}
+
+	img {
+		float: left;
+		width: 60%;
+	}
+
+	.section .image {
+		float: left;
+		padding: 0 0 30px 30px;
+	}
+
+	.section .text {
+		float: left;
+		padding: 0 0 30px 30px;
+	}
+
+	.button {
+		margin-bottom: 30px;
 	}
 	
 }
