@@ -82,7 +82,7 @@ table {
 .wrap-mid {
 	margin: 0 auto;
 	width: 100%;
-	max-width: 800px;
+	max-width: 900px;
 }
 
 .wrap-lg {
@@ -253,8 +253,8 @@ article>.inner {
 
 #about .cover {
 	float: left;
-	padding: 0 10px 10px 0;
-	width: 251px;
+	padding: 0 5px 10px 0;
+	width: 280px;
 }
 
 #about .cover img {
@@ -262,20 +262,17 @@ article>.inner {
 	float: left;
 	padding: 0 12px 20px 20px;
 	max-width: 120px;
-	min-width: 80px;
 }
 
 #about .cover h3 {
 	font-family: 'Avenir Next', sans-serif;
 	font-size: 15px;
-	font-size: 0.9375rem;
 	font-style: italic;
 	line-height: 18px;
 	text-align: left;
 }
 #about .cover p {
 	font-size: 14px;
-	font-size: 0.875rem;
 	text-align: left;
 }
 
@@ -287,6 +284,7 @@ article>.inner {
 #about .media span {
 	color: #000;
 	font-weight: 500;
+	line-height: 18px;
 }
 
 .section {
@@ -496,6 +494,10 @@ article>.inner {
 	margin-top: 20px;
 }
 
+.detail .second {
+	margin-top: 40px;
+}
+
 .detail span {
 	color: rgba(0, 0, 0, .7);
 	font-family: 'Lato', sans-serif;
@@ -526,9 +528,20 @@ article>.inner {
 	margin-left: 0;
 }
 
+.detail .thought {
+	color: rgba(0, 0, 0, .7);
+	font-family: 'PT Sans', sans-serif;
+	font-size: 22px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 32px;
+	margin: 0 100px 20px 0;
+	text-align: left;
+}
+
 .detail ol {
 	margin-left: 15%;
-	padding-bottom: 30px;
+	padding: 10px 0 30px 0;
 }
 
 .detail li {
@@ -539,7 +552,7 @@ article>.inner {
 	font-weight: 500;
 	line-height: 32px;
 	list-style: outside;
-	margin-bottom: 10px;
+	padding-bottom: 10px;
 	text-align: left;
 }
 
@@ -550,7 +563,8 @@ article>.inner {
 }
 
 .detail .button {
-	margin-top: 75px;
+	margin-left: 43%;
+	padding-top: 10px;
 }
 
 .detail .button a:hover {
