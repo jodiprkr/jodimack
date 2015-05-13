@@ -282,9 +282,12 @@ article>.inner {
 }
 
 #about .media span {
-	color: #000;
-	font-weight: 500;
-	line-height: 18px;
+	color: rgba(51, 51, 51, 1);
+  float: left;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  padding: 10px 0;
 }
 
 .section {
