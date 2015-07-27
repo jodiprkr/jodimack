@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <title>Jodi Parker – Work</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="Designer based in Seattle, WA">
+    <meta name="keywords" content="UX, UI, Product Design, Web Design, Designer, Seattle, WA, Washington, Northwest">
+    <meta name="author" content="Jodi Parker" />
+
+    <!--TypeKit Fonts -->
+    <script type="text/javascript" src="//use.typekit.net/ppq6bwl.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Lato:300,400,400italic' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!--CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+
+  <body>
+    <header class="wrap-xl sticky">
+      <a href="#skip" class="offscreen">Skip Content</a><!-- skip content option for screen readers - hidden offscreen -->
+
+      <a href="index.html" id="logo"><img src="img/logo.png" alt="Jodi Parker logo"></a>
+
+      <nav>
+        <ol class="group">
+          <li><a href="index.html#about" class="slide-center-out">About</a></li>
+          <li><a href="index.html#work" class="slide-center-out">Work</a></li>
+          <li><a href="index.html#contact" class="slide-center-out">Contact</a></li>
+        </ol>
+      </nav>     
+    </header><!-- /.wrap-lg-->
+
+    <section id="content">
+
+      <article id="tableau">
+        <div class="inner">
+          <div class="wrap-mid detail">
+            <a name="skip"></a><!-- screen readers skip to here -->
+
+            <h2>User Experience Homework: Tableau Public</h2>
+
+            <h1>Exercise</h1>
+            <p>This homework focuses on improving or adding new functionality to Tableau Public site. The primary user role for this exercise is a Tableau Public author who is using the website to manage his vizzes. While in a real development context your solutions would need to work equally well across device form factors (smartphone, tablet, laptops, and desktops), it’s not necessary to show your work in that respect for this exercise (unless you want to).
+            
+            <h1>Please explore one or more of the following design areas:</h1>
+
+            <h1>Scaling up.</h1> 
+            <p>Consider how the experience would need to change if an author had a very large number of vizzes to manage: how about 500? What new organizing principles or affordances would you consider adding? How might you incorporate full text search or faceted search (think Amazon.com or Kayak)?</p>
+
+            <h1>Social discovery.</h1> 
+            <p>Consider ways that Tableau Public authors could follow other authors. Remember that authors are likely to find other authors by discovering their vizzes published on blogs and websites other than Tableau Public. You may also want to consider flows where authors could promote their views to other authors directly on Tableau Public, either through extending existing pages, or something entirely new. Would you integrate with social networks?</p>
+            
+            <h1>You tell us.</h1> 
+            <p>If you feel there’s something (or several things) missing or wrong with the Tableau Public experience, go for it.</p>
+
+            <h3>Sketches</h3>
+
+            <p>After taking time to poke around the product, I made notes about everything that came to mind. Doing this allowed me to clarify my thoughts, as well as get to know the product more intimately.</p>
+
+            <div class="grid-2">
+              <figure>
+                <img src="img/tableau/01-tableau.jpg">
+              </figure>
+
+              <figure>
+                <img src="img/tableau/02-tableau.jpg">
+              </figure>
+            </div>
+
+            <p class="first">Next, I addressed the issue of scaling up (authors managing over 500 vizzes on their dashboard). The main organizing principles and affordances I wanted to include were:</p>
+
+            <div class="wrap-sm">
+              <ol>
+                <li>sorting</li>
+                <li>filtering</li>
+                <li>faceted navigation</li>
+                <li>visual presentation (list and grid views)</li>
+              </ol>
+            </div>
+
+            <p>Sorting and filtering would give authors more control over their dashboard, allowing them to work with a large set of vizzes. I included the option to filter by name, date, views, and topic, and to sort by date, views, and name.</p>
+
+            <p>I created a sidebar using faceted navigation for the filters. Breaking the filters into small, bite-sized chunks makes the information easier to locate, and the user less overwhelmed. <a href="http://alistapart.com/article/design-patterns-faceted-navigation" target="_blank">"Faceted navigation addresses the universal need to narrow."</a></p>
+
+            <p>I included both "list" and "grid" views, allowing for multiple use cases. Some users may want to scan for a specific viz based on a visual marker, where others might want to see the metadata laid out in a table format.</p>
+
+            <div class="wrap-sm">
+              <figure>
+                <img src="img/tableau/03-tableau.jpg">
+              </figure>
+
+              <figure>
+                <img src="img/tableau/04-tableau.jpg">
+              </figure>
+            </div> 
+
+            <p class="first">I liked the option for authors to "Feature" one of their vizzes, so I made sure to keep the "Featured" viz at the top of the page, regardless of sort order or filtered results.</p>
+
+            <p>Next, I addressed the issue of social discovery. The solutions I reached included:</p>
+
+            <div class="wrap-sm">
+              <ol>
+                <li>tagging</li>
+                <li>following</li>
+                <li>favoriting</li>
+                <li>adding to embedded vizzes</li>
+                <li>creating a "Discover" tab</li>
+              </ol>
+            </div>
+
+            <p>I played with the idea of "tagging" each viz. Clicking on a tag could navigate to a page showing <span class="italic">all</span> vizzes with that tag, and include a control to toggle between vizzes published by the author whose page the user was just on, and <span class="italic">all</span> authors. In addition to a more robust set of metadata, a tagging system would also give authors higher exposure to being discovered by other authors.</p> 
+
+            <div class="wrap-sm">
+              <figure>
+                <img src="img/tableau/05-tableau.jpg">
+              </figure>
+            </div>
+
+            <p>By adding a "Follow" button to each profile, users can curate a list of their favorite authors. Similar to Instagram and Twitter, this feature could include a live feed of the authors you follow.</p>
+
+            <p>I would also add the option to "Favorite" a viz, that way users aren't forced to subscribe to <span class="italic">all</span> the vizzes an author publishes – just save the ones they like in a collection.</p>
+
+            <p>Given the features mentioned so far, I found it useful to change the main navigation to the following:</p>
+
+            <div class="wrap-sm">
+              <ol>
+                <li>Home (live feed of authors I am following)</li>
+                <li>Discover (Viz of the Day, staff picks, Greatest Hits, etc.)</li>
+                <li>Blog</li>
+                <li>Resources</li>
+              </ol>
+            </div>
+
+            <div class="grid-2">
+              <figure>
+                <img src="img/tableau/07-tableau.jpg">
+              </figure>
+
+              <figure>
+                <img src="img/tableau/09-tableau.jpg">
+              </figure>
+            </div>
+
+            <p class="first">For embedded vizzes on blogs and other websites, I included a link that says "More by this author", which would navigate to the author's profile on Tableau Public. I also added a "Share" button, giving readers an opportunity to tweet or embed the viz on their platform of choice.</p>
+
+            <div class="wrap-sm">
+              <figure>
+                <img src="img/tableau/08-tableau.jpg">
+              </figure>
+            </div>
+
+            <p class="first">Before moving into wireframes, I took a moment to flesh out how these ideas would work on mobile.</p>
+
+            <p>A note on implementation: instead of using media queries to create a fluid experience at <span class="italic">every</span> width (responsive design), my preference would be to focus on specific device types (phone, tablet, desktop) in order to maintain control over the design at different "break points" (adaptive design). <a href="http://authenticjobs.com" target="_blank">Authentic Jobs</a> is a great example of this.</p>
+
+            <div class="wrap-sm">
+              <figure>
+                <img src="img/tableau/06-tableau.jpg">
+              </figure>
+            </div>
+
+            <p class="first last">It's okay, you can laugh at my Pop-Tart phones...</p>
+
+
+            <h3>Wireframes</h3>
+
+            <div class="wrap-sm">
+              <h1>Desktop</h1>
+
+              <figure>
+                <img src="img/tableau/wireframes/desktop/01-desktop.png">
+              </figure>
+
+              <figure>
+                <img src="img/tableau/wireframes/desktop/02-desktop.png">
+              </figure>
+
+              <figure>
+                <img src="img/tableau/wireframes/desktop/03-desktop.png">
+              </figure>
+            </div>
+
+            <div class="wrap-sm">
+              <h1>Mobile</h1>
+
+              <figure>
+                <img src="img/tableau/wireframes/mobile/01-mobile.png">
+              </figure>
+
+              <figure>
+                <img src="img/tableau/wireframes/mobile/02-mobile.png">
+              </figure>
+
+              <figure>
+                <img src="img/tableau/wireframes/mobile/03-mobile.png">
+              </figure>
+
+              <figure>
+                <img src="img/tableau/wireframes/mobile/04-mobile.png">
+              </figure>
+
+              <figure>
+                <img src="img/tableau/wireframes/mobile/05-mobile.png">
+              </figure>
+
+              <figure>
+                <img src="img/tableau/wireframes/mobile/06-mobile.png">
+              </figure>
+            </div>
+
+
+            <h3>Post-Mortem</h3>
+
+            <p>Working on this homework assignment has gotten me even more excited about Tableau than before. I really enjoyed diving into the different problems, and I had to stop myself where I am now. Products that change the way people see, understand, and interact with data are powerful for not only answering existing questions, but asking new ones. My goal is to contribute to a company like Tableau and push us all towards a more clear, informed, and empathic future.</p> 
+
+            <p>Given the short turnaround for this exercise, I feel it's necessary to point out that in a regular work environment I would not keep my questions to myself. Rather, I would eagerly brainstorm with my colleagues and work toward building something better together than what I could on my own.</p>
+
+            <div class="wrap-xs">
+              <h1>Thank you for your time!</h1>
+              <figure>
+                <img src="img/tableau/omgyes.gif">
+              </figure>
+            </div>
+          </div>
+        </div>
+    </article>
+  </body>
