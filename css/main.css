@@ -318,8 +318,7 @@ article>.inner {
   cursor: pointer;
   display: block;
   float: left;
-  margin-right: 40px;
-  padding: 0 0 100px 20px;
+  margin: 0 40px 100px 20px;
   width: 500px;
 }
 
@@ -453,7 +452,8 @@ article>.inner {
 #yoroshiku,
 #et,
 #tableau,
-#betterpath {
+#betterpath,
+#exit38 {
   margin-top: 40px;
 }
 
