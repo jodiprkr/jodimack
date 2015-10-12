@@ -10,9 +10,9 @@
     <meta name="keywords" content="UX, UI, Interaction Design, Product Design, Web Design, Designer, Seattle, WA, Washington">
     <meta name="author" content="Jodi Parker" />
 
-    <!--TypeKit Fonts -->
-    <script type="text/javascript" src="//use.typekit.net/ppq6bwl.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <!-- Typekit Fonts -->
+    <script src="https://use.typekit.net/isd2dmv.js"></script>
+	  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans|Lato:300,400,400italic' rel='stylesheet' type='text/css'>
@@ -49,107 +49,221 @@
 
             <h2>Exit 38: Rock Climbing App (In Progress)</h2>
 
-            <span>Play with the prototype <a href="https://invis.io/8A49HWPB2" target="_blank">here</a>.</span>
-
-            <!-- IN PROGRESS
+            <p class="button"><a href="https://invis.io/8A49HWPB2" target="_blank">See the prototype</a></p>
 
             <h1>Getting Started</h1>
-            <p>The purpose of this app is to TK</p>
+            <p>I wanted to gain more experience designing for mobile and polish my interaction design skills, so I decided to create a mobile app. I wanted to make something that I would actually use, so it didn’t take long for me to decide on an app related to rock climbing. My original ideas included:</p>
 
-            <h3>Sketches</h3>
+            <ol>
+            	<li><a href="https://en.wikipedia.org/wiki/Climbing_guidebook" target="_blank">guidebook</a> (specific to region/state?)</li>
+            	<li>training tutorials (physical)</li>
+            	<li>skill tutorials (building anchors, knots, rappelling, etc.)</li>
+            	<li>gear guide (similar to <a href="http://thewirecutter.com/" target="_blank">The Wirecutter</a>)</li>
+            </ol>
+
+            <p class="last">Given that the existing digital guidebooks are difficult to navigate, confusing, and somewhat unreliable, I decided to create one for a local Seattle climbing area, Exit 38. Some guidebooks focus on regions and states, but I wanted to start small by focusing on a confined area that I was familiar with. This approach provided me w/ a built in hierarchy of information (Area > Crag > Section > Routes) and allowed me to focus solely on the interaction design.</p>
+
+            <h3>Sketches & Wireframes</h3>
+
+            <p>I started by writing a list of things I would find useful in a guidebook, also using an existing <a href="http://www.amazon.com/Exit-38-rock-climbing-Guide/dp/0972370838" target="_blank">paperback</a> as a reference.</p>
 
             <div class="wrap-sm">
               <figure>
                 <img src="img/exit38/sketches/01-sketch.jpg">
               </figure>
+            </div>
 
+            <p class="first">I then took a stab at the navigation, but it felt scattered and excessive. The interactions needed to be trimmed down, and there needed to be a task associated with each screen.</p>
+
+            <div class="wrap-sm">
               <figure>
                 <img src="img/exit38/sketches/02-sketch.jpg">
               </figure>
+            </div>
 
+            <p class="first">Heeding the advice of Ryan Singer’s <a href="https://signalvnoise.com/posts/1926-a-shorthand-for-designing-ui-flows" target="_blank">shorthand for designing UI flows</a>, I removed the distracting elements and focused more on giving the user something to do with each view. In this case, I went with “Choose a section, area, etc.”.</p>
+
+            <div class="wrap-sm">
               <figure>
                 <img src="img/exit38/sketches/03-sketch.jpg">
               </figure>
+            </div>
 
+            <p class="first">I was on the right track, but things still felt a bit scattered, and I was confusing things like “section” with “area”. The navigation I landed on was <span class="bold">Area > Crag > Section > Route</span>:</p>
+
+            <ol>
+	            <li><span class="bold">Area:</span></strong> At Exit 38, there are three different areas to hike out to.</li>
+	            <li><span class="bold">Crag:</span> In each area, there are multiple crags, or rock faces.</li>
+	            <li><span class="bold">Section:</span> Each crag (think rock wall) has multiple sections (left, right, middle, etc.)</li>
+	            <li><span class="bold">Route:</span> Within each section, there are multiple routes to climb.</li>
+            </ol>
+
+            <div class="wrap-sm">
+              <figure>
+                <img src="img/exit38/sketches/overview.jpg">
+              </figure>
+            </div>
+
+						<div class="wrap-sm">
               <figure>
                 <img src="img/exit38/sketches/04-sketch.jpg">
               </figure>
             </div>
 
-            <h3>Wireframes</h3>
-          
-            <div class="wrap-mid">
-              <figure>
-                <a href="img/exit38/wireframes/09-flows-2x.png" target="_blank"><img class="white cursor hover" src="img/exit38/wireframes/08-flows.png"></a>
+            <p class="first">I felt good about this flow, and I wanted to see how they panned out in wireframes.</p>
+
+            <div class="wrap-sm">
+            	<figure>
+                <a href="img/exit38/wireframes/01-flows.png" target="_blank"><img class="white cursor hover" src="img/exit38/wireframes/01-flows.png"></a>
               </figure>
             </div>
 
-            <h3>Mocks</h3>
+            <p class="first">I mocked up a few screens from this flow to get a sense of how the content filled up the mobile view.</p>
 
-            <h1>Version One</h1>
+          	<figure>
+          		<img class="white" src="img/exit38/mocks/early-mocks.png">
+          	</figure>
 
-            <div class="wrap-xs">
-              <figure>
-                <img src="img/exit38/mocks/v1/01-homescreen.png">
-              </figure>
+          	<p>Not much was really working here. The home screen images didn't tell me anything about the areas they call out, and the color contrast for the bottom menu bar is too low. The area map was just plain boring and I knew it could be better. Looking back, I should have spent more time in the wireframing stage before getting lost in the visual details.</p>
 
-              <figure>
-                <img src="img/exit38/mocks/v1/02-area.png">
-              </figure>
+          	<p>The crag map doesn't really help me if I don't know where I am in relation to them, so enabling location would be really helpful here. I thought it might also be helpful if the sections were broken up into actual sections, similar to an <a href="https://developers.google.com/chart/interactive/docs/gallery/areachart?hl=en" target="_blank">area chart</a>.</p>
 
-              <figure>
-                <img src="img/exit38/mocks/v1/03-crag.png">
-              </figure>
+						<p>There's also the issue of having serious alerts, such as "Corroded anchors: DO NOT CLIMB!", behind an interaction. Some climbers may ignore the hazard sign and fail to check the alert. I considered removing routes with issues from the app altogether, but I ran into some issues:</p>
 
-              <figure>
-                <img src="img/exit38/mocks/v1/04-section.png">
-              </figure>
+						<ol>
+							<li>What if there is a climber that is familiar with the routes? She decides to climb the one that is dangerous, without opening the app, and puts herself in a potentially life-threatening situation.</li>
 
-              <figure>
-                <img src="img/exit38/mocks/v1/05-notes.png">
-              </figure>
-            </div>
-
-            <p class="first">Not much was really working in version one. The homescreen images don't tell me anything about the areas they call out, and the color contrast for the bottom menu bar is too low. The area map was just plain boring and I knew it could be better.</p> 
-
-            <p>The crag map doesn't help me if I don't know where I am in relation to them, so enabling location would be really helpful here. The crag sections would be more useful if they were broken up into <span class="italic">actual</span> sections, similar to an <a href="https://developers.google.com/chart/interactive/docs/gallery/areachart?hl=en" target="_blank">area chart</a>.</p>
-
-            <p>I wanted to consider <a href="https://en.wikipedia.org/wiki/Augmented_reality" target="_blank">AR</a> for trail guidance and route paths, giving users a live direct view of their immediate environment.</p>
-
-            <p>There's also the issue of having serious alerts, such as <span style="color:#FF3030">"Corroded anchors: DO NOT CLIMB!"</span>, behind an interaction. Some climbers may ignore the hazard sign and fail to check the alert. I considered removing routes from the app altogether if they shouldn't be climbed, but I ran into some issues:</p>
-
-            <ol>
-              <li>what if there is a climber that is familiar with the routes? She decides to climb the one that is dangerous, without opening the app, and puts herself in a potentially life-threatening situation.</li>
-
-              <li>same for a climber who <span class="italic">isn't</span> familiar with the routes, doesn't have the app at all, but he sees anchors at the top and decides to give it a shot.</li>
-            </ol>
-
-            <p>Tangential to this, I thought it would be useful to allow climbers to report issues with routes, bolts, anchors, etc., through a simple "report issue" button.</p>
-
-            <p>Lastly, having a star system both for "favoriting" a route <span class="italic">and</span> route ratings could get confusing, so I decided to switch the "favorite" button to a heart.</p>
-
-
-            <h1>Version Two</h1>
+							<li>Same for a climber who isn't familiar with the routes, doesn't have the app at all, but he sees anchors at the top and decides to give it a shot.</li>
+						</ol>
 
             <div class="wrap-sm">
               <figure>
-                <img src="img/exit38/mocks/v2/path.png">
-              </figure>
-
-              <figure>
-                <img src="img/exit38/mocks/v2/crag.png">
-              </figure>
-
-              <figure>
-                <img src="img/exit38/mocks/v2/wall.png">
-              </figure>
-
-              <figure>
-                <img src="img/exit38/mocks/v2/route.png">
+                <img src="img/exit38/sketches/05-sketch.jpg">
               </figure>
             </div>
 
-            -->
+            <p class="first">I went back to wireframes so as not to get lost in the visual details again. In this iteration I took a stab at the notes, search, favorites, and augmented reality features I had on my wish list.</p>
+
+            <div class="wrap-sm">
+            	<figure>
+                <a href="img/exit38/wireframes/05-flows-v3.png" target="_blank"><img class="white cursor hover" src="img/exit38/wireframes/05-flows-v3.png"></a>
+              </figure>
+            </div>
+
+            <p class="first">I didn’t like that the “delete note” feature put the interface into a mode, whereas a “swipe left” interaction would cut the number of gestures in half (“Swipe > Delete” instead of “Edit > Icon > Delete > Done”). Removing the mode would also prevent any <a href="http://www.usabilityfirst.com/glossary/mode-error/" target="_blank">mode errors</a> from taking place.</p>
+
+            <p>I created a prototype with these wireframes and set off to my local climbing gym. I tested the prototype on some fellow climbers and received a lot of useful feedback:</p>
+
+            <ol>
+	            <li>“the personal notes are great, but can I read other people’s notes?”</li>
+	            <li>“the binocular icon for the virtual guide doesn’t make sense”</li>
+	            <li>“is there a route description?”</li>
+	            <li>“how exposed is this crag during the summer?”</li>
+            </ol>
+
+						<p>With this feedback, I eagerly cranked out my next set of wireframes.</p>
+   
+            <figure>
+              <a href="img/exit38/wireframes/07-flows-v5.png" target="_blank"><img class="white cursor hover" src="img/exit38/wireframes/07-flows-v5.png"></a>
+            </figure>
+
+            <p class="first last">This iteration was definitely going down the right track, but it was clear to me that there was a lack of focus. I was trying to make every "wish list" feature work in the first version, instead of concentrating on the core elements of the UI. I ultimately decided to reel things in and focus on key features such as Routes, Notes, and Favorites, and to roll out additional features in subsequent versions.</p>
+
+            <h3>Version One</h3>
+
+            <p>For the first version, I decided to put certain features on the backburner and focus on a “read-only” guidebook. Focusing on the primary interactions, getting a pattern library dialed, and keeping basics like “Notes” and “Favorites” was a great starting point. This allows me to focus on the basic goals of the app while keeping it uncluttered. My main goals for this app were consistency (both interaction and visual), focus, and simplicity.</p>
+
+            <figure>
+              <a href="img/exit38/mocks/01-mocks-v6.png" target="_blank"><img class="white cursor hover" src="img/exit38/mocks/01-mocks-v6.png"></a>
+            </figure>
+
+            <p class="first">While <span class="italic">my</span> goal as a user might be to read about certain routes, I didn’t want to assume this was <span class="italic">everyone’s</span> goal. Throughout the app, I made sure that all information was accessible, prominent, and pointed clearly to a potential user goal. I did this by:</p>
+
+            <ol>
+	            <li>having tabs for Routes, Notes, and Favorites</li>
+	            <li>making actions easily reversible, such as back arrows to the last screen a user was on, as well as a “sticky” tab navigation.</li>
+	            <li>allowing users to quickly funnel down to what their looking for, with only four main screens (Area, Crag, Section, Route).</li>
+           	</ol> 
+
+						<p>In the former iterations, there was empty real estate on every screen behind the “Choose” task and list/map view. Instead of having users toggle between these two views, it would be more efficient to show both views at the same time and have certain gestures make one view more dominant than the other.</p>
+
+						<p>To keep things clean and focused, I wanted the app to have a clear visual hierarchy. <span class="italic">Designing with the Mind in Mind</span> explains that “one of the most important goals in structuring information is to have an arrangement of information that:</p>
+
+						<ol>
+							<li>breaks the information into distinct sections, and breaks large sections into subsections</li>
+	            <li>labels each section and subsection prominently and in such a way as to clearly identify its content</li>
+	            <li>presents the sections and subsections as a hierarchy, with higher level sections presented more strongly than lower level ones.”</li>
+						</ol>
+
+						<p>This allows users to mentally sift out irrelevant information and quickly arrive at their goal.</p>
+
+						<p class=" last button"><a href="https://invis.io/8A49HWPB2" target="_blank">See the prototype</a></p>
+
+            <h3>Version Two</h3>
+            <p>In version two, I plan to include the following features:</p>
+
+            <p><span class="bold">Downloadable <a href="https://en.wikipedia.org/wiki/Topo_(climbing)" target="_blank">topos</a>:</span> This is an issue I need to research more, but a couple beneficial use cases I can think of are:</p>
+
+          	<ol>
+          		<li>a user doesn’t have cellular data on their phone, so they download the topos over a wifi connection before they head out to climb.</li>
+            	<li>a user wants to preserve their battery life so they use “airplane mode” while they’re out climbing.</li>
+          		<li>lack of connection in the mountains</li>
+          	</ol>
+
+          	<p><span class="bold">Search:</span> adding this additional tab would allow users to search for a particular area, crag, section, or route without having to funnel down the main interaction. For example, if I wanted to climb “Devil’s Peak” but didn’t remember which crag or area it was in, I could simply search for “Devil’s Peak” as soon as I opened the app. The search results would autocomplete as I typed.</p>
+
+						<p><span class="bold">“Add photos” to notes:</span> this will require the use of <a href="http://www.lukew.com/ff/entry.asp?1928" target="_blank">app permissions</a> for both the camera and photo album on the device.</p>
+
+						<span class="italic">Early ideation...</span>
+
+						<figure>
+            	<img class="white" src="img/exit38/wireframes/addphoto.png"></a>
+            </figure>
+
+						<p class="last"><span class="bold">GPS locator:</span> this will also require app permissions for location on the device. This feature would allow the user to see where they are in relation to an area or crag in map view. There are <a href="https://www.youtube.com/watch?t=4&v=06kRr1S3D4Q" target="_blank">many ways</a> this feature could be helpful.</p>
+
+            <h3>Version Three</h3>
+            <p>In version three, I plan to include the following features:</p>
+
+            <p><span class="bold">Comments:</span> as it stands, the app allows users to create their own personal notes on routes, but being able to read beta from other climbers could prove tremendously helpful. For example, I’m about to climb a route that has a very loose boulder about 30 feet up, and before I climb it I read a comment that says “Watch out for the super loose boulder about 30 feet up!” Having access to this kind of information could save my and, most likely, my belayers life. There could also be a sub-feature that allows users to “upvote” certain comments that are helpful, such as a life-threatening one like this.</p>
+
+            <p><span class="bold">Reviews:</span> During a user test I performed on some early wireframes, some fellow climbers mentioned that it would be helpful to know if certain routes were crimpy (tiny finger holds), static, dynamic, run out (bolts far apart), etc. This information could also fall under the “Comments” feature, but it would be great to have simple, fun icons showing how other climbers “rated this route”.</p>
+
+            <span class="italic">Early ideation...</span>
+
+            <figure>
+            	<img class="white" src="img/exit38/wireframes/reviews.png"></a>
+            </figure>
+
+            <p><span class="bold">Report Issues:</span> related to the life-threatening scenario in “Comments”, it would be useful to allow climbers to report issues with routes, bolts, anchors, etc., through some sort of "report issue" button.</p>
+
+            <p><span class="bold">Augmented reality guide:</span> alright, maybe this will be in version four, but I already have some great ideas for incorporating AR into the app. This is something I need to research more, but this would be really helpful in multiple situations:</p>
+
+            <ol>
+            	<li>hiking down a path and coming to a fork in the road (most guidebooks give you hiking instructions, like “Turn right at the large black rock”, but what if that rock isn’t there anymore? Or that tree was burned down?</li>
+
+            	<li>standing in front of a wall that you see bolts on, but aren’t quite sure where you are on the map. A GPS locator would be helpful, like on Google Maps, but having an AR view would provide helpful information such as number of bolts, length of route, tips, etc.</li>
+            </ol>
+
+            <div class="wrap-sm">
+	            <figure>
+	            	<img src="img/exit38/mocks/crag.png"></a>
+	            </figure>
+
+	            <figure>
+	            	<img src="img/exit38/mocks/path.png"></a>
+	            </figure>
+
+	            <figure>
+	            	<img src="img/exit38/mocks/route.png"></a>
+	            </figure>
+
+	            <figure>
+	            	<img src="img/exit38/mocks/wall.png"></a>
+	            </figure>
+	          </div>
+
+	          <h3>To be continued...</h3>
 
           </div>
         </div>
