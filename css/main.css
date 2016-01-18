@@ -452,7 +452,8 @@ article>.inner {
 #et,
 #tableau,
 #betterpath,
-#exit38 {
+#exit38,
+#picmonkey {
   margin-top: 40px;
 }
 
@@ -604,8 +605,7 @@ article>.inner {
 }
 
 .detail .button {
-  margin-left: 43%;
-  padding-top: 10px;
+  margin-left: 40%;
 }
 
 .detail .button a:hover {
