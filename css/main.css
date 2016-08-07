@@ -300,6 +300,15 @@ article>.inner {
   width: 500px;
 }
 
+.image img {
+  height: 350px;
+  width: 500px;
+}
+
+.shadow img {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, .4);
+}
+
 .section .text {
   display: block;
   float: right;
