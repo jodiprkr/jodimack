@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/jodiprkr
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://jodimack.com
+  * I am jodiprkr (https://keybase.io/jodiprkr) on keybase.
+  * I have a public key with fingerprint FA39 1F1E CBA5 BF31 3607  D8BA 9DA9 F0CE 214C 6C55
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010111d8db1c0f94806bd4545abf4ad65fbd225f96d4165e6327f05669f484a6438d0a",
+            "fingerprint": "fa391f1ecba5bf313607d8ba9da9f0ce214c6c55",
+            "host": "keybase.io",
+            "key_id": "9da9f0ce214c6c55",
+            "kid": "010111d8db1c0f94806bd4545abf4ad65fbd225f96d4165e6327f05669f484a6438d0a",
+            "uid": "b61ccf1b30701988bb100244ececd719",
+            "username": "jodiprkr"
+        },
+        "service": {
+            "hostname": "jodimack.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1482988066,
+    "expire_in": 157680000,
+    "prev": "449bc65dbef5d5f8faedfa3c1bc78bf873ddc347e9492c10d7b845152cfc0bd8",
+    "seqno": 24,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.61
+Comment: https://keybase.io/crypto
+
+yMInAnicrZJbSBVBHMaPdlNL0i5CEQZbIMHBdnZnZ3cPJVaSElpUBhnVaeem29Gz
+xz3rNbo9GOUJeogKjSIzKUGMxC5EVGZRJChEhD5ERmlEh4IeioSgWSnoocfmZZiZ
+3/fNN//5P86cEchIWZN5p/TLxOFlKUMD5+oCO2m7dEDCDm2SQgekCJueWDVlcS8c
+sakUkmQgAwCoQTEgMjehISNMoQY1C3NoUaRxTBVF4yaiECCNIVXRuawhZHJoQAtB
+1aCyJQUlbkcrmRtz7agnbLmlmoADRrClYa4CFck6NbBlUsvkMmEKgAQRTRPCKifu
+K0Q4bMVZvu2IPbEIT8f7B/+fc9dN22EECOEAq7IuA9MwMAayrEDICCNUB6YPxpkb
+tWqYoPc71I65EVc6GJTEbr1NmF9Y/yV/ETUWieQTp0ZoY67jOcSpFidVnhcL+UKv
+KeaTDQyHf3uEsR2looxCUM/cuO1EpRAQJPFs3xRAQxHRZISCEmuM2S4L2z6h6ciQ
+xfCvYfXCEkITE6RRzLhGNW5wi1HxIQRgohuYG7pKKVGhzkxoKgTIVMcG1ICmEE5k
+TA3Jf1Vt1JFCChQ5rUrhGbcro5ZX5zLp4KOHu2cGUjICs2el+v0VyEjP+tN1u5rT
+AonChVmXRoaniipak+OH7yW/Pz/x4tS1G+ErW+jAhcaGuk+DtzcmUtNre7OTOycO
+VXTNS316f/X1D825+eu2d585snSssAgVXt5bMTj08l4ia8/DH99PT30dHVLxq57c
+tGdJtWC9uszqudGx+e3Clda39zlPcKS++M2i7uw8I21t3+53fWd7OvVtSlB53b6j
+saSs7XxpYfbdkfENC6pG85afXdI7njYnMjnyICt1rGT+1rba3MHhnIKJ/qpDpYuP
+KVOfpaNfeEtzYLJsz46azoRacjUy52cs+e40Ku4uuOgFNpWv7ulIJL+tKK/oUpVb
+d072t3sdxz+27Kuc27rq5geMXmT8ApEhPpY=
+=7ohY
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jodiprkr
+
+==================================================================
