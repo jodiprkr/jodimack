@@ -246,8 +246,121 @@ blockquote footer a:hover {
   padding-bottom: 0;
 }
 
-.hero {
-  width: 1024px;
+.tint {
+  position: relative;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+}
+
+.ad-tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,168,189,.65);
+  transition: all .3s linear;
+}
+
+.pm-tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(222,54,0,.65);
+  transition: all .3s linear;
+}
+
+.et-tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(17,124,200,.65);
+  transition: all .3s linear;
+}
+
+.fg-tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(236,146,199,.65);
+  transition: all .3s linear;
+}
+
+.ns-tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(219,82,255,.65);
+  transition: all .3s linear;
+}
+
+.yoroshiku-tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(30,130,76,.65);
+  transition: all .3s linear;
+}
+
+.climbing-tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(232,126,4,.65);
+  transition: all .3s linear;
+}
+
+.text {
+  left: 0;
+  position:absolute;
+  text-align:center;
+  top: 300px;
+  width: 100%;
+}
+
+.text h1 {
+  color: rgba(255,255,255,1);
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 36px;
+  padding-bottom: 24px;
+}
+
+.text h3 {
+  color: rgba(255,255,255,1);
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  padding-bottom: 50px;
+  text-transform: uppercase;
 }
 
 ul {
